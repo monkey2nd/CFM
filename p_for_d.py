@@ -5,8 +5,9 @@ def Mak():
     df=df.drop([1,3,5,7,9,11,13])
     df=df.set_index(df.columns[0])
     ls=[]
+    print(df.columns)
     for col in df.columns:
-        ls.append(re.split('( | )',col[0])[2][1])
+        ls.append(re.findall("[一-龥]", col[0])[0])
     df.columns=ls
     week=['月', '火', '水', '木', '金', '土', '日']
     df.reindex(week,axis=1)

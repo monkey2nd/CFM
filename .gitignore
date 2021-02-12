@@ -1,3 +1,4 @@
 *.exe
 /test.py
 __pycache__
+class.pkl
