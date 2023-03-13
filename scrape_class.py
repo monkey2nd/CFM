@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 
 def scrall():
-    url="https://scomb.shibaura-it.ac.jp/portal/dologin?initialURI="
+    url="" # 大学のログインサイトのurlを入力してください
     driver=webdriver.Chrome('./chromedriver.exe')
     driver.implicitly_wait(100)
     driver.get(url)
